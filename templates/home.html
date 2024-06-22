@@ -38,7 +38,7 @@
               <td>{{d.InstrumentType}}</td>
               <th >{{d.album.AlbumName}}</th>
               <td>{{d.album.album_release_date}}</td>
-              <td><a class="btn btn-primary mx-3" href="{% url 'edit_album' d.id %}">Edit</a><a class="btn btn-danger" href="{% url 'delete_album' d.id %}">Delete</a></td>
+              <td><a class="btn btn-primary mx-3" href="{% url 'edit_album' d.album.id  %}">Edit</a><a class="btn btn-danger" href="{% url 'delete_album' d.id %}">Delete</a></td>
         
             </tr>
             
